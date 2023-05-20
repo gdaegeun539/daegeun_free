@@ -1,5 +1,6 @@
 package xyz.device.dao;
 
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.apache.ibatis.annotations.Param;
@@ -10,7 +11,7 @@ import xyz.device.model.ReviewVO;
 import java.util.List;
 
 @Setter
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Repository
 public class ReviewDAOMybatis implements ReviewDAO{
 

@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Gradle : xyz.device : daegeun_free-0.0.1-SNAPSHOT.war" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2ec1198-be44-4664-8bad-72e3428ee311" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/aop/ExceptionAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/DeviceInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/DeviceInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/ReviewServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/exception/DataUpdateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/exception/ExceptionControllerAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/DeviceInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/aop/ExceptionAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/aop/ExceptionAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/DeviceInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/DeviceInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/dao/DeviceInfoDAOMybatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/dao/DeviceInfoDAOMybatis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/dao/ReviewDAOMybatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/dao/ReviewDAOMybatis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/model/DeviceInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/model/DeviceInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/model/ReviewVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/model/ReviewVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/service/DeviceInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/DeviceInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/ReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/deviceInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/deviceInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/reviewMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/reviewMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/dispatcherServlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/dispatcherServlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +128,7 @@
       <recent name="D:\Repo\daegeun_free\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DBTest.testConnection">
+  <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.75">
     <configuration name="DBTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -308,7 +321,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684513583980</updated>
       <workItem from="1684513584970" duration="4800000" />
-      <workItem from="1684553753207" duration="16362000" />
+      <workItem from="1684553753207" duration="24810000" />
     </task>
     <servers />
   </component>

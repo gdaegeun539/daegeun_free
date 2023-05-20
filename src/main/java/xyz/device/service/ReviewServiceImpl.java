@@ -1,5 +1,6 @@
 package xyz.device.service;
 
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,7 @@ import java.util.List;
 
 
 @Setter
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Service
 public class ReviewServiceImpl implements ReviewService{
 

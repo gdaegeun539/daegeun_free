@@ -64,6 +64,12 @@ dependencies {
     testImplementation("org.springframework:spring-test:5.2.24.RELEASE")
     // https://mvnrepository.com/artifact/org.assertj/assertj-core
     testImplementation("org.assertj:assertj-core:3.24.2")
+
+    /* API DOCS */
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation("io.springfox:springfox-swagger2:3.0.0")
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    implementation("io.springfox:springfox-swagger-ui:3.0.0")
 }
 
 tasks.test {

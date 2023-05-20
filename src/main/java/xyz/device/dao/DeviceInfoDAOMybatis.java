@@ -1,5 +1,6 @@
 package xyz.device.dao;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -12,7 +13,7 @@ import xyz.device.model.DeviceInfoVO;
 import java.util.List;
 
 @Setter
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Repository
 public class DeviceInfoDAOMybatis implements DeviceInfoDAO{
 
