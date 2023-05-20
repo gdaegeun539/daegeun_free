@@ -5,30 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2ec1198-be44-4664-8bad-72e3428ee311" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/daegeun_free.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/dao/DeviceInfoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/dao/DeviceInfoDAOMybatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/dao/ReviewDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/dao/ReviewDAOMybatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/model/DeviceInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/model/ReviewVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/deviceInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/reviewMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/xyz/device/DBTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/xyz/device/DeivceInfoDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/xyz/device/LoggerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/xyz/device/MybatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/xyz/device/ReviewDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/aop/ExceptionAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/DeviceInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/DeviceInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/ReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/device/service/ReviewServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daegeun_free.sql" beforeDir="false" afterPath="$PROJECT_DIR$/daegeun_free.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/device/controller/api/DeviceInfoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +308,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684513583980</updated>
       <workItem from="1684513584970" duration="4800000" />
-      <workItem from="1684553753207" duration="13102000" />
+      <workItem from="1684553753207" duration="16362000" />
     </task>
     <servers />
   </component>
