@@ -23,13 +23,11 @@ dependencies {
     // https://mvnrepository.com/artifact/org.mybatis/mybatis
     implementation("org.mybatis:mybatis:3.5.13")
     // https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
-    implementation("org.mybatis:mybatis-spring:3.0.1")
+    implementation("org.mybatis:mybatis-spring:2.1.1")
     // https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp
     implementation("commons-dbcp:commons-dbcp:1.4")
     // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
     implementation("org.springframework:spring-jdbc:5.2.24.RELEASE")
-
-
 
     /* AOP AND TRANSACTIONS */
     // https://mvnrepository.com/artifact/org.aspectj/aspectjrt
@@ -52,10 +50,8 @@ dependencies {
     /* LOGGING */
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     implementation("org.slf4j:slf4j-api:1.7.36")
-    // https://mvnrepository.com/artifact/org.slf4j/jcl-over-slf4j
-    implementation("org.slf4j:jcl-over-slf4j:1.7.36")
-    // https://mvnrepository.com/artifact/org.slf4j/slf4j-reload4j
-    implementation("org.slf4j:slf4j-reload4j:1.7.36")
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    implementation("ch.qos.logback:logback-classic:1.2.12")
 
     /* SERVLET FOR LEGACY */
     // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
@@ -66,6 +62,8 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     // https://mvnrepository.com/artifact/org.springframework/spring-test
     testImplementation("org.springframework:spring-test:5.2.24.RELEASE")
+    // https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testImplementation("org.assertj:assertj-core:3.24.2")
 }
 
 tasks.test {
