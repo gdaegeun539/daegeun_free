@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import xyz.device.dao.DeviceInfoDAO;
 import xyz.device.dao.ReviewDAO;
+import xyz.device.exception.DataUpdateException;
 import xyz.device.model.ReviewVO;
 
 import java.util.List;
@@ -28,8 +29,8 @@ public class ReviewServiceImpl implements ReviewService{
     public void insert(ReviewVO vo) {
         Integer result = reviewDAO.insert(vo);
 
-        if (result == 0){ // TODO 예외 타입 수정 필요?
-            throw new RuntimeException("리뷰 추가 실패");
+        if (result == 0){
+            throw new DataUpdateException("리뷰 추가 실패");
         }
 
         // 리뷰 추가 후 기기 평점 업데이트
@@ -40,8 +41,8 @@ public class ReviewServiceImpl implements ReviewService{
     public void delete(Integer id) {
         Integer result = reviewDAO.delete(id);
 
-        if (result == 0){ // TODO 예외 타입 수정 필요?
-            throw new RuntimeException("리뷰 삭제 실패");
+        if (result == 0){
+            throw new DataUpdateException("리뷰 삭제 실패");
         }
     }
 

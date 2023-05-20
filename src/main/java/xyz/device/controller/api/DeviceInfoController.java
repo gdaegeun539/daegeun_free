@@ -65,7 +65,7 @@ public class DeviceInfoController {
 
         List<DeviceInfoVO> deviceInfoVOs = deviceInfoService.selectByCompany(company);
 
-        if (deviceInfoVOs == null) {
+        if (deviceInfoVOs == null || deviceInfoVOs.isEmpty()) {
             HashMap<String, String> map = new HashMap<>();
             String message = "device(company: " + company + ") not found";
             map.put("error", message);
@@ -83,7 +83,7 @@ public class DeviceInfoController {
 
         deviceInfoService.insert(deviceInfoVO);
         HashMap<Object, Object> map = new HashMap<>();
-        map.put("message", "device added");
+        map.put("message", "device " + deviceInfoVO.getId() + " added");
 
         return new ResponseEntity<>(map, headers, HttpStatus.OK);
     }

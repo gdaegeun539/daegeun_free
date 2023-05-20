@@ -14,6 +14,7 @@ public class ReviewVO {
     public Integer dev_id;
     public String uname;
     public String content;
+    public String pwd;
     public Integer rating;
     public LocalDateTime reg_date;
 }
