@@ -20,6 +20,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/review")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:8080"}, allowedHeaders = "*")
 public class ReviewController {
 
     private ReviewService reviewService;

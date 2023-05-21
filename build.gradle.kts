@@ -24,8 +24,10 @@ dependencies {
     implementation("org.mybatis:mybatis:3.5.13")
     // https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
     implementation("org.mybatis:mybatis-spring:2.1.1")
-    // https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp
-    implementation("commons-dbcp:commons-dbcp:1.4")
+//    // https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp
+//    implementation("commons-dbcp:commons-dbcp:1.4")
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2
+    implementation("org.apache.commons:commons-dbcp2:2.9.0")
     // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
     implementation("org.springframework:spring-jdbc:5.2.24.RELEASE")
 
@@ -44,6 +46,8 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-core:2.15.1")
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation("com.fasterxml.jackson.core:jackson-databind:2.15.1")
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.1")
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly("org.projectlombok:lombok:1.18.26")
 

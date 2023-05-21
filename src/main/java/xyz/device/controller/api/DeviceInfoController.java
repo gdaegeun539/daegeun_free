@@ -19,6 +19,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/device")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:8080"}, allowedHeaders = "*")
 public class DeviceInfoController {
 
     private DeviceInfoService deviceInfoService;
