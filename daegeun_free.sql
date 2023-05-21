@@ -7,7 +7,8 @@ CREATE TABLE `device_info` (
 	`spec`	varchar(512)	NULL,
     `rating_avg` float null default 0,
 	`photo_name`	varchar(128)	NULL,
-	`photo_path`	varchar(128)	NULL
+	`photo_path`	varchar(512)	NULL,
+    primary key(id)
 ) default character set utf8;
 
 CREATE TABLE `review` (
@@ -16,19 +17,21 @@ CREATE TABLE `review` (
 	`uname`	varchar(40)	NULL,
 	`content`	varchar(512)	NULL,
 	`pwd`	varchar(64)	NULL,
-	`rating`	integer	NULL,
-    `reg_date` timestamp null default current_timestamp
+	`rating`	float	NULL,
+    `reg_date` timestamp null default current_timestamp,
+    primary key(id)
 ) default character set utf8;
 
-ALTER TABLE `device_info` ADD CONSTRAINT `PK_DEVICE_INFO` PRIMARY KEY (
-	`id`
-);
+-- ALTER TABLE `device_info` ADD CONSTRAINT `PK_DEVICE_INFO` PRIMARY KEY (
+-- 	`id`
+-- );
 
-ALTER TABLE `review` ADD CONSTRAINT `PK_REVIEW` PRIMARY KEY (
-	`id`
-);
+-- ALTER TABLE `review` ADD CONSTRAINT `PK_REVIEW` PRIMARY KEY (
+-- 	`id`
+-- );
 
 alter table device_info modify `photo_path` varchar(512) null;
+alter table review modify `rating ` float null
 
 alter table device_info convert to charset utf8;
 alter table review convert to charset utf8;
@@ -42,7 +45,7 @@ insert into device_info (id, name, category, company, price, spec, photo_name, p
 insert into review (id, dev_id, uname, content, pwd, rating) values (1, 1, "사용자1", "괜찮네요", "1234", 4.0);
 insert into review (id, dev_id, uname, content, pwd, rating) values (2, 2, "사용자2", "통화하기 불편하네요", "1234", 3.5);
 insert into review (id, dev_id, uname, content, pwd, rating) values (3, 3, "사용자3", "전작이랑 달라진 게 안보이네요", "1234", 3.0);
-insert into review (id, dev_id, uname, content, pwd, rating) values (4, 4, "사용자4", "서브로 쓸만하네요", "1234", 3.8);
+insert into review (id, dev_id, uname, content, pwd, rating) values (4, 4, "사용자4", "서브로 쓸만하네요", "1234", 3.8);reviewreview
 -- 샘플 데이터 끝
 
 DROP TABLE `device_info`;
