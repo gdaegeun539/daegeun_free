@@ -10,11 +10,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 public class ReviewVO {
-    public Integer id;
-    public Integer dev_id;
-    public String uname;
-    public String content;
-    public String pwd;
-    public Integer rating;
-    public LocalDateTime reg_date;
+    private Integer id;
+    private Integer dev_id;
+    private String uname;
+    private String content;
+    private String pwd;
+    private Integer rating;
+    private LocalDateTime reg_date;
 }

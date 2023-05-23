@@ -49,15 +49,15 @@ public class ReviewDAOMybatis implements ReviewDAO{
         return sqlSession.selectOne(namespace + ".selectById", id);
     }
 
+//    리뷰 uname 단건 조회
+    @Override
+    public ReviewVO selectByUname(String uname) {
+        return sqlSession.selectOne(namespace + ".selectByUname", uname);
+    }
+
 //    리뷰 기기별 조회
     @Override
     public List<ReviewVO> selectByDevId(Integer dev_id) {
         return sqlSession.selectList(namespace + ".selectByDevId", dev_id);
-    }
-
-//    리뷰 기기별 pagination 조회
-    @Override
-    public List<ReviewVO> selectByDevIdPagination(Integer dev_id, @Param("start") Integer start, @Param("cnt") Integer cnt){
-        return sqlSession.selectList(namespace + ".selectByDevIdPagination", dev_id);
     }
 }

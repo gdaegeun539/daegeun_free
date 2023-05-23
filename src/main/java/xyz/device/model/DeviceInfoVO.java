@@ -8,13 +8,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class DeviceInfoVO {
-    public Integer id;
-    public String name;
-    public String category;
-    public String company;
-    public int price;
-    public String spec;
-    public String photo_name;
-    public String photo_path;
-    public Double rating_avg;
+    private Integer id;
+    private String name;
+    private String category;
+    private String company;
+    private int price;
+    private String spec;
+    private String photo_name;
+    private String photo_path;
+    private Double rating_avg;
 }

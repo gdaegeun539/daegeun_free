@@ -17,9 +17,7 @@ public interface DeviceInfoDAO {
 
     public DeviceInfoVO selectById(Integer id);
 
-    public List<DeviceInfoVO> selectByPagination(Integer start, Integer cnt);
+    public DeviceInfoVO selectByName(String name);
 
     public List<DeviceInfoVO> selectByCompany(String company);
-
-    public List<DeviceInfoVO> selectByCompanyPagination(String company, Integer start, Integer cnt);
 }

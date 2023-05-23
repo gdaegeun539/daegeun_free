@@ -57,21 +57,15 @@ public class DeviceInfoDAOMybatis implements DeviceInfoDAO{
         return sqlSession.selectOne(namespace + ".selectById", id);
     }
 
-    // 기기 pagination 조회
+    // 기기 이름으로 단건 조회
     @Override
-    public List<DeviceInfoVO> selectByPagination(@Param("start") Integer start, @Param("cnt") Integer cnt) {
-        return sqlSession.selectList(namespace + ".selectByPagination");
+    public DeviceInfoVO selectByName(String name) {
+        return sqlSession.selectOne(namespace + ".selectByName", name);
     }
 
     // 기기 회사로 조회
     @Override
     public List<DeviceInfoVO> selectByCompany(String company) {
         return sqlSession.selectList(namespace + ".selectByCompany", company);
-    }
-
-    // 기기 회사 pagination 조회
-    @Override
-    public List<DeviceInfoVO> selectByCompanyPagination(String company, @Param("start") Integer start, @Param("cnt") Integer cnt) {
-        return sqlSession.selectList(namespace + ".selectByCompanyPagination", company);
     }
 }

@@ -16,7 +16,7 @@ public interface ReviewDAO {
 
     public ReviewVO selectById(Integer id);
 
-    public List<ReviewVO> selectByDevId(Integer dev_id);
+    public ReviewVO selectByUname(String uname);
 
-    public List<ReviewVO> selectByDevIdPagination(Integer dev_id, Integer start, Integer cnt);
+    public List<ReviewVO> selectByDevId(Integer dev_id);
 }
