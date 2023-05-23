@@ -38,12 +38,18 @@ public class ReviewServiceImpl implements ReviewService{
     }
 
     @Override
+    @Transactional( propagation = Propagation.REQUIRED, isolation = Isolation.READ_COMMITTED, rollbackFor = Exception.class, timeout = 10)
     public void delete(Integer id) {
+        // 기기 평점 변경용 ID 취득
+        Integer dev_id = reviewDAO.selectById(id).getDev_id();
         Integer result = reviewDAO.delete(id);
 
         if (result == 0){
             throw new DataUpdateException("리뷰 삭제 실패");
         }
+
+        // 리뷰 삭제 후 기기 평점 업데이트
+        deviceInfoDAO.updateRating(dev_id);
     }
 
     @Override
