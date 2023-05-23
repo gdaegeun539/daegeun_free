@@ -32,15 +32,13 @@
         select * from review where id = #{id}
     </select>
 
+    <!--  리뷰 작성자 이름으로 단건 조회  -->
+    <select id="selectByUname" resultType="ReviewVO">
+        select * from review where uname = #{uname}
+    </select>
+
     <!--  리뷰 dev_id로 조회  -->
     <select id="selectByDevId" resultType="ReviewVO">
         select * from review where dev_id = #{dev_id}
-    </select>
-
-    <!--  리뷰 dev_id로 pagination 조회  -->
-    <select id="selectByDevIdPagination" resultType="ReviewVO">
-        select * from review where dev_id = #{dev_id}
-        order by id desc
-        limit #{start}, #{cnt}
     </select>
 </mapper>

@@ -35,7 +35,7 @@ public class ReviewController {
         HashMap<Object, Object> map = new HashMap<>();
         map.put("message", "review " + reviewVO.getId() + " added");
 
-        return new ResponseEntity<>(map, headers, HttpStatus.OK);
+        return new ResponseEntity<>(map, headers, HttpStatus.CREATED);
     }
 
     @GetMapping("/dev_id/{id}")
@@ -45,7 +45,7 @@ public class ReviewController {
 
         List<ReviewVO> reviewVOList = reviewService.selectByDevId(id);
 
-        if (reviewVOList == null || reviewVOList.isEmpty()) {
+        if (reviewVOList == null) {
             HashMap<String, String> map = new HashMap<>();
             map.put("error", "review list not found");
 

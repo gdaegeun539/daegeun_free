@@ -38,6 +38,11 @@
         select * from device_info where id = #{id}
     </select>
 
+    <!--  기기 자료 정보 기기명으로 단건 조회  -->
+    <select id="selectByName" resultType="DeviceInfoVO">
+        select * from device_info where name = #{name}
+    </select>
+
     <!--  기기 자료 정보 pagination 조회  -->
     <select id="selectByPagination" resultType="DeviceInfoVO">
         select * from device_info
@@ -48,12 +53,5 @@
     <!--  기기 자료 정보 회사로 조회  -->
     <select id="selectByCompany" resultType="DeviceInfoVO">
         select * from device_info where company = #{company}
-    </select>
-
-    <!--  기기 자료 정보 회사로 pagination 조회  -->
-    <select id="selectByCompanyPagination" resultType="DeviceInfoVO">
-        select * from device_info where company = #{company}
-        order by id desc
-        limit #{start}, #{cnt}
     </select>
 </mapper>

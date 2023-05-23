@@ -31,7 +31,7 @@ public class DeviceInfoController {
 
         List<DeviceInfoVO> deviceInfoVOList = deviceInfoService.selectAll();
 
-        if (deviceInfoVOList == null || deviceInfoVOList.isEmpty()) {
+        if (deviceInfoVOList == null) {
             HashMap<String, String> map = new HashMap<>();
             map.put("error", "device list not found");
 
@@ -86,7 +86,7 @@ public class DeviceInfoController {
         HashMap<Object, Object> map = new HashMap<>();
         map.put("message", "device " + deviceInfoVO.getId() + " added");
 
-        return new ResponseEntity<>(map, headers, HttpStatus.OK);
+        return new ResponseEntity<>(map, headers, HttpStatus.CREATED);
     }
 
     @DeleteMapping("/id/{id}")

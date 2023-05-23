@@ -20,6 +20,5 @@ public class LoggerTest {
         logger.error("---error");
         logger.warn("-----warn");
         logger.trace("----trace");
-
     }
 }
